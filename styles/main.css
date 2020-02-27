@@ -1,16 +1,27 @@
 body {
-    background-color: darkred;
-    color: rgb(255, 199, 193);
+    background-image: url("https://i.ibb.co/7vJ9d7w/Bear-Watcher-BG.jpg");
+}
+
+.btn-warning {
+    margin: 1rem;
+}
+
+.add-section {
+    margin-top: 1rem;
+}
+
+.btn-link, .fas-tree {
+    color: forestgreen;
 }
 
 h1 {
     text-align: center;
+    color: whitesmoke;
+    z-index: 1;
 }
 
-.btn-primary {
-    margin: 1rem;
-}
-
-.form-group {
-    color: black;
+.header {
+    background-color: gray;
+    opacity: 0.4;
+    z-index: 0;
 }

@@ -2,3 +2,15 @@ body {
     background-color: darkred;
     color: rgb(255, 199, 193);
 }
+
+h1 {
+    text-align: center;
+}
+
+.btn-primary {
+    margin: 1rem;
+}
+
+.form-group {
+    color: black;
+}

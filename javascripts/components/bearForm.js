@@ -7,7 +7,9 @@ const newBearMaker = (e) => {
     const newBear =   {
         id: `bear${bearData.length + 1}`,
         name: document.getElementById('bear-name').value,
-        imageUrl: document.getElementById('bear-image').value
+        imageUrl: document.getElementById('bear-image').value,
+        timesAttempted: 0,
+        fishCaught: 0,
     };
     bears.push(newBear);
     document.getElementById('new-bear-form').reset();

@@ -3,9 +3,9 @@ import bear from '../javascripts/components/bearForm.js'
 import river from '../javascripts/components/river.js'
 
 const init = () => {
-    document.getElementById('submit-new-bear').addEventListener('click', bear.newBearMaker);
-    river.newBearPrinter(bearData.bearArray, 'new-bear-container');
+    $('#submit-new-bear').click(bear.newBearMaker);
+    river.newBearPrinter();
+    console.log(bearData.bearArray)
 }
 
 init();
-console.log(bearData.bearArray)

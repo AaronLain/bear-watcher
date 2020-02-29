@@ -1,9 +1,10 @@
 import util from '../helpers/util.js'
-
+import bearData from '../helpers/data/bearData.js'
 const newBearPrinter = (bearArray, divId) => {
+    let bears = bearData.getBears()
     let domString = ``;
     domString += '<div class="d-flex flex-wrap">';
-    bearArray.forEach(bear => {
+    bears.forEach(bear => {
         domString += '<div class="col-3">';
         domString += `<div id="${bear.id}" class="card">`;
         domString += `<img class="card-img-top src="${bear.imageUrl}" alt="Card image cap">`;

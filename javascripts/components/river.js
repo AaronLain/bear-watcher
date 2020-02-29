@@ -1,15 +1,25 @@
 import util from '../helpers/util.js'
 import bearData from '../helpers/data/bearData.js'
+
+
+
 const newBearPrinter = () => {
     let bears = bearData.getBears()
     let domString = ``;
+    let date = new Date($.now());
     domString += '<div class="d-flex flex-wrap">';
     bears.forEach(bear => {
         domString += '<div class="col-3">';
-        domString += `<div id="${bear.id}" class="card">`;
+        domString += `<div class="card">`;
         domString += `<img class="img-fluid" src=${bear.imageUrl} alt="Card image cap">`;
         domString += '<div class="card-body text-center">';
         domString += `<h5 class="card-title">${bear.name}</h5>`;
+        domString += '<div class="col-12">'
+        domString += `<button style="margin: 1%;" id="${bear.id}" class="btn btn-dark tried-btn">Tried to Catch a Fish</button>`
+        domString += `<button style="margin: 1%;" id="${bear.id}" class="btn btn-success caught-btn">Caught a Fish</button>`
+        domString += `<div class="fishing-tries">Most Recent Fishing Attempt: <em>${date}</em> </div>`
+        domString += `<div class="fishing-tries">Fish Caught: ${bear.fishCaught}</div>`
+        domString += '</div>'
         domString += '</div>';
         domString += '</div>';
         domString += '</div>';

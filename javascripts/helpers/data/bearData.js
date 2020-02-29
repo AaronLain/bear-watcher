@@ -7,7 +7,9 @@ const bearArray = [
 ];
 
 const getBears = () => {
+    console.log(bearArray);
     return bearArray;
+    
 }
 
 export default { getBears }

@@ -1,5 +1,4 @@
 import bearData from '../helpers/data/bearData.js'
-import river from '../components/river.js'
 
 const newBearMaker = (e) => {
     e.preventDefault();
@@ -11,7 +10,6 @@ const newBearMaker = (e) => {
     bearData.bearArray.push(newBear);
     //document.getElementById('new-bear-form').reset();
     //document.getElementById('collapseOne').classList.remove('show');
-    river.newBearPrinter();
 };
 
 export default { newBearMaker }

@@ -18,7 +18,6 @@ const addTries = (bearId) => {
 const addFish = (bearId) => {
     const targetBear = bearArray.findIndex((x) => x.id === bearId);
     bearArray[targetBear].fishCaught += 1;
-    console.log(bearArray[targetBear].fishCaught)
 }
 
 const getBears = () => {

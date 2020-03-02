@@ -14,11 +14,11 @@ const newBearPrinter = () => {
         domString += '<div class="col-12">'
         domString += `<button style="margin: 1%;" id="${bear.id}" class="btn btn-dark tried-btn">Tried to Catch a Fish</button>`
         domString += `<button style="margin: 1%;" id="${bear.id}" class="btn btn-success caught-btn">Caught a Fish</button>`
-        domString += '<div><strong>Most Recent Fishing Attempt:</strong></div><ul>'
-        for (let i = 0; i < bear.timesAttempted.length; i++) {
-        domString += `<li><em>${bear.timesAttempted[i]}</em></li>`
-        }
-        domString += '</ul>'
+        domString += '<div><strong>Most Recent Fishing Attempt:</strong></div><ol>'
+            for (let i = 0; i < bear.timesAttempted.length; i++) {
+                domString += `<li><em>${bear.timesAttempted[i]}</em></li>`
+            }
+        domString += '</ol>'
         domString += `<div><strong>Fish Caught:</strong> ${bear.fishCaught}</div>`
         domString += '</div>'
         domString += '</div>'

@@ -19,7 +19,7 @@ const newBearPrinter = () => {
         domString += `<li><em>${bear.timesAttempted[i]}</em></li>`
         }
         domString += '</ul>'
-        domString += `<div><strong>Fish Caught:</strong>${bear.fishCaught}</div>`
+        domString += `<div><strong>Fish Caught:</strong> ${bear.fishCaught}</div>`
         domString += '</div>'
         domString += '</div>'
         domString += '</div>'
@@ -28,6 +28,5 @@ const newBearPrinter = () => {
     domString += '</div>';
     util.printToDom('new-bear-container', domString);
 };
-//<div>${bear.timesAttempted}<div>`
 
 export default { newBearPrinter };

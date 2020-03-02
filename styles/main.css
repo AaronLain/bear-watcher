@@ -1,6 +1,5 @@
 body {
     background-image: url("https://i.ibb.co/7vJ9d7w/Bear-Watcher-BG.jpg"); 
-    z-index: -1;
 }
 
 .btn-warning {
@@ -13,17 +12,13 @@ body {
 
 .btn-link, .fas-tree {
     color: forestgreen;
+    font-size: 70%;
 }
 
 h1 {
     text-align: center;
     color: rgb(255, 255, 255);
-    z-index: 10;
     margin-top: .5rem;
-}
-
-.navbar {
-    z-index: 1
 }
 
 .bear-section {

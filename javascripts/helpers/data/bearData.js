@@ -13,15 +13,15 @@ const addTries = (bearId) => {
     let date = new Date($.now());
     let timesAttemptedArray = bearArray[targetBear].timesAttempted;
     timesAttemptedArray.push(date);
-}
+};
 
 const addFish = (bearId) => {
     const targetBear = bearArray.findIndex((x) => x.id === bearId);
     bearArray[targetBear].fishCaught += 1;
-}
+};
 
 const getBears = () => {
     return bearArray;
-}
+};
 
-export default { getBears, addTries, addFish }
+export default { getBears, addTries, addFish };

@@ -5,16 +5,14 @@
     const triedEvent = (e) => {
         const bearId = e.target.id
         bearData.addTries(bearId);
-        river.newBearPrinter();
-        console.log(e.target.id)
-    }
+        river.newBearPrinter();  
+    };
     
     const caughtEvent = (e) => {
         const bearId = e.target.id;
         bearData.addFish(bearId);
-        river.newBearPrinter();
-        console.log(e.target.id)
-    }
+        river.newBearPrinter(); 
+    };
     
     const webEvents = () => {
         river.newBearPrinter();
@@ -23,5 +21,6 @@
         $('body').on('click', '.caught-btn', caughtEvent);
     }
 
-    export default { webEvents }
+    export default { webEvents };
+    
 

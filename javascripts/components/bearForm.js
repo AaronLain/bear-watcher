@@ -6,14 +6,14 @@ const newBearMaker = (e) => {
     const bears = bearData.getBears();
     const newBear =   {
         id: `bear${bearData.length + 1}`,
-        name: document.getElementById('bear-name').value,
-        imageUrl: document.getElementById('bear-image').value,
+        name: $('#bear-name').val(),
+        imageUrl: $('#bear-image').val(),
         timesAttempted: [],
         fishCaught: 0,
     };
     bears.push(newBear);
-    document.getElementById('new-bear-form').reset();
-    document.getElementById('collapseOne').classList.remove('show');
+    $('#new-bear-form').trigger('reset');
+    $('#collapseOne').removeClass('show');
     river.newBearPrinter();
 };
 

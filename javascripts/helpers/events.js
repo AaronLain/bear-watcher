@@ -6,12 +6,14 @@
         const bearId = e.target.id
         bearData.addTries(bearId);
         river.newBearPrinter();
+        console.log(e.target.id)
     }
     
     const caughtEvent = (e) => {
         const bearId = e.target.id;
         bearData.addFish(bearId);
         river.newBearPrinter();
+        console.log(e.target.id)
     }
     
     const webEvents = () => {

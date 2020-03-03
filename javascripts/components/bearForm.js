@@ -12,8 +12,8 @@ const newBearMaker = (e) => {
         fishCaught: 0,
     };
     bears.push(newBear);
-    document.getElementById('new-bear-form').reset();
-    document.getElementById('collapseOne').classList.remove('show');
+    $('#new-bear-form').trigger('reset');
+    $('#collapseOne').removeClass('show');
     river.newBearPrinter();
 };
 

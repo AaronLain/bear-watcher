@@ -5,7 +5,7 @@ const newBearMaker = (e) => {
     e.preventDefault();
     const bears = bearData.getBears();
     const newBear =   {
-        id: `bear${bearData.length + 1}`,
+        id: `bear${bears.length + 1}`,
         name: $('#bear-name').val(),
         imageUrl: $('#bear-image').val(),
         timesAttempted: [],

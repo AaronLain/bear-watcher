@@ -8,3 +8,4 @@ A tracking tool for bears and their eating habits.
 1. Make sure you have http-server installed via npm. You can find it [here](https://www.npmjs.com/get-npm).
 1. Run hs -p 8888 in your console.
 1. Navigate to localhost:8888
+1. Track some bears!
